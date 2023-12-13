@@ -4,7 +4,7 @@
   "description": "Launcher for SMART apps",
   "main": "./src/index.js",
   "engines": {
-    "node": "16"
+    "node": ">=16"
   },
   "scripts": {
     "watch": "DOTENV_CONFIG_PATH=env/development.env node -r dotenv/config ./node_modules/.bin/nodemon ./src/index.js",
