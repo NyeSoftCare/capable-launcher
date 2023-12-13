@@ -9,7 +9,6 @@
   "scripts": {
     "watch": "DOTENV_CONFIG_PATH=env/development.env node -r dotenv/config ./node_modules/.bin/nodemon ./src/index.js",
     "start": "node ./src/index.js",
-    "test": "DOTENV_CONFIG_PATH=env/test.env node -r dotenv/config ./node_modules/.bin/mocha test/*.js",
     "test:cover": "DOTENV_CONFIG_PATH=env/test.env node -r dotenv/config ./node_modules/.bin/nyc --reporter=lcov --reporter=text mocha --exit test/*.js",
     "test:watch": "DOTENV_CONFIG_PATH=env/test.env node -r dotenv/config ./node_modules/.bin/mocha test/*.js --watch",
     "coverage": "DOTENV_CONFIG_PATH=env/test.env node -r dotenv/config ./node_modules/.bin/nyc report",
